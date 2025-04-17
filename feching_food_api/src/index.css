@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerr {
+  background-color: #1E1E1E;
+}
+
+.dlogo {
+  width: 100px;
+}
+
+.child2 img {
+  width: 40px;
+}
+
+.img-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-hover:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.div-style {
+  width: 50%;
+}
+
+.mindiv {
+  background: linear-gradient(#1e1e1e, #000000 7%)
+}
+
+.glow-border {
+  position: relative;
+  z-index: 1;
+}
+
+.glow-border::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  background: linear-gradient(270deg, #ff00fb, #00fbff);
+  background-size: 400% 400%;
+  animation: glowing 2s linear infinite;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
