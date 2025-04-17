@@ -1,4 +1,4 @@
-# 🍽️ React Meal Finder App
+# 🍽️ React Food Recipe Finder
 
 A visually engaging and responsive **Meal Finder** app built with React that allows users to search for meals, explore detailed recipes, and even watch cooking videos directly from YouTube.
 
